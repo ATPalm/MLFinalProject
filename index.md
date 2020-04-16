@@ -141,7 +141,6 @@ Based on our performance below, the Extreme Gradient Boosted Random Forest wihto
 
 # Conclusions
 
+In choosing three increasingly complex tree-based regression models, we were able to demonstrate the increasing predictive power moving from decision tree to random forest to gradient boosted random forest, each performing better than the last. This is what expected moving into the project, as each model was built to corrrect issue with the ones preceeding it. As such, we knew in advance that extreme gradient boosting would take the lead. However, at first, it came as a suprise to us that PCA hindered our performance. After careful thought, we realized that PCA was not the right dimensionality reduction algorithm for the dataset since the feature definitions were diverse and nuanced to the task of pricing bonds. With more time, resources, and computational power, we firmly believe that we could thoroughly tune the hyper-parameters of our model to achieve a significant better prediction accuracy.
 
-
-
-
+Overall, the results we have achieved demonstrate the feasibility of predicting bond prices with a sufficiently complex model, an important task for bond traders around the world. Millions of trades are executed in the bond market on a daily basis. Our best model generated profit of over $96,000 on the test dataset of 186 thousand trades. Scaled up to a commercial level of volume, it is clear that we have succeded in our goal of fortelling the future of bond pricing.
